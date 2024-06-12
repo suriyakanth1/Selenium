@@ -26,5 +26,4 @@ jobs:
 
     - name: Run Selenium test
       run: |
-        javac -cp ".:libs/*" SeleniumTest/src/automationtest/Selenium.java
-        java -cp ".:libs/*" SeleniumTest/src/automationtest.Selenium
+        javac -cp ".:libs/*:selenium-server-4.21.0.jar/*" SeleniumTest/src/automationtest/Selenium.java
